@@ -3,7 +3,7 @@ def valid_move?(board,position)
   if position.to_i -1.between?(1,9) && position_taken?
     true
   else
-    true
+    false
   end
 end
 
