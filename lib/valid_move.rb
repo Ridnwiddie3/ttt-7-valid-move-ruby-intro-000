@@ -5,15 +5,7 @@ def valid_move?(board,position)
 
 
 # re-define your #position_taken? method here, so that you can use it in the #valid_move? method above.
-def  position_taken?(board,index)
-    if board[position] == " "
-    true
-  elsif board[position] == ""
-    true
-  elsif board[position] == nil
-    false
-  else  board[position] == "X" || "O"
-    false
-
+def  position_taken?(board,position)
+  return false if [" ", "", nil].include?(board[position])
+  return true if ["X", "O"].include?(board[position])
   end
-end
