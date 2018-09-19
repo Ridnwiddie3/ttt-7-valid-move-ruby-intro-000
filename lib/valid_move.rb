@@ -10,7 +10,7 @@ def  position_taken?(board,index)
   #return false if [" ", "", nil].include?(board[position])
   #return true if ["X", "O"].include?(board[position])
   #end
-  if array[ind] == " " || aray[ind] == "" || array[ind] == nil
+  if array[index] == " " || aray[index] == "" || array[index] == nil
     return false
   else
     return true
